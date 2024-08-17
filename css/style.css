@@ -1,0 +1,1266 @@
+
+*
+{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    /* border:1px solid blue; */
+    text-decoration:none !important;
+    outline: none !important;
+}
+
+@font-face 
+{
+    font-family:Roboto-regular;
+    src: url(../Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family:Roboto-medium;
+    src: url(../Roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family:Poppins-regular;
+    src: url(../Poppins/Poppins-Regular.ttf);
+}
+
+html
+{
+    font-size: 85%;
+
+}
+p
+{
+    font-family:Poppins-regular ;
+
+}
+
+h1,h2,h3,h4,h5,h6,small,a
+{
+    font-family:Poppins-regular;
+}
+
+a
+{
+    font-family:Roboto-regular;
+}
+
+
+
+html::-webkit-scrollbar
+{
+    width:5px;
+}
+html::-webkit-scrollbar-track
+{
+    background:white;
+}
+html::-webkit-scrollbar-thumb
+{
+    background:linear-gradient(maroon,red);
+    border-radius: 50px;
+}
+
+
+.jiggle
+{
+    animation:social 2s ease-in-out infinite alternate;
+}
+@keyframes social
+{
+   0%
+   {
+       transform: translateY(-3px) scale(1.15);
+   }
+
+   40%
+   {
+       transform: rotate(7deg);
+   }
+
+   80%
+   {
+       transform: rotate(-7deg);
+   }
+   100%
+   {
+       transform: translateY(0px)  scale(0.9);
+   }
+}
+
+.tomato
+{
+    color:tomato;
+}
+.white
+{
+    color:whitesmoke;
+}
+.clip-polygon
+{
+    clip-path: polygon(100% 0, 100% 40%, 0 100%, 0 0);
+}
+.big-font
+{
+    font-size: 1.8rem;
+}
+.btn-wrapper
+{
+    margin-top: 2.3rem;
+}
+
+.btnn
+{
+    padding: 0.4rem 1rem;
+    margin: 0.3rem 0.8rem 0 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 900;
+    overflow: hidden;
+    letter-spacing: 0.1rem;
+    position:relative;
+    /* box-shadow: 0 0 3px rgba(255, 255, 255, 0.6); */
+    transition: all 0.5s ease-in-out;
+}
+
+.btnn span
+{
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    border-radius: 4px;
+    border: none;
+    display:inline-block;
+    background: white;
+    top:0;
+    left: 0;
+    z-index: -1;
+    transition:all 0.3s ease-in;
+}
+.btnn:hover span
+{
+    width: 100%;
+}
+
+.btnn1
+{
+    color:whitesmoke;
+    border:2px solid whitesmoke;
+}
+.btnn1:hover
+{
+    color:black;
+    letter-spacing: 0.2rem;
+}
+.btnn2
+{
+    color:white;
+    border:2px solid white;
+}
+.btnn2:hover
+{
+    color:white;
+    letter-spacing: 0.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* HEADER STYLE STARTS */
+.header-wrapper
+{
+    position: relative;
+    min-height: 100vh;
+}
+
+.header-design
+{
+    height:100vh;
+    width: 100%;
+    top:0;
+    left: 0;
+    background:linear-gradient(black, rgb(27, 26, 26));
+    position: absolute;
+    z-index: -2;
+}
+
+/* NAVIGATION STYLE STARTS */
+.logo
+{
+    color:whitesmoke;
+    font-weight: 900;
+    transition:all 0.5s ease-in-out;
+}
+.logo:hover
+{
+    color:tomato;
+}
+.logo .fa-pencil-alt
+{
+    transform: rotate(-44deg) !important;
+}
+.navbar li
+{
+    margin: 0 0.5rem;
+}
+.navbar ul a
+{
+    color:white;
+    font-family: Roboto-medium;
+    letter-spacing: 0.1rem;
+    position: relative;
+}
+.navbar ul a::after
+{
+    content: "";
+    position: absolute;
+    display: block;
+    width:0px;
+    margin:auto;
+    bottom: 0;
+    left:0.6rem;
+    transition:all 0.5s ease-in-out;
+    height: 2px;
+    background: tomato;
+}
+.navbar ul a:hover::after
+{
+    width:25px;
+}
+.contact-link
+{
+  color:tomato !important;  
+}
+
+
+
+
+
+/* HERO STYLE STARTS */
+.hero-content
+{
+    color:white;
+}
+.hero-content h1
+{
+    font-size: 3rem;
+}
+
+.hero-content .hero-texts
+{
+    max-width:300px;
+}
+.hero-content small
+{
+    word-spacing: 0.1rem;
+    opacity: 0.7;
+}
+.hero-img.animate-top
+{
+    animation-delay: 0.5s;
+}
+
+
+.social-icons li
+{
+    font-size: 1.3rem;
+    margin: 0.8rem;
+    color:white;
+    transition: all 0.5s ease-in-out;
+    border:none;
+    background: transparent;
+}
+.social-icons li:hover
+{
+    color:gold;
+    transform: scale(1.5) rotate(360deg);
+}
+.animate-top
+{
+    animation:slide-top 1s linear forwards;
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+@keyframes slide-top {
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+/* HERO STYLE ENDS */
+
+
+
+/* ABOUT STYLE --*/
+.about-section
+{
+    background:black;
+    border-top-right-radius:30px;
+    border-bottom-left-radius:30px;
+    padding: 50px 0;
+    position: relative;
+}
+
+.top-section
+{
+    position: absolute;
+    top: -55px;
+    padding: 1rem 1rem;
+    background-color:black;
+    width: 40%;
+    min-width: 350px;
+    border-radius: 0 100px 0 0;
+    color: whitesmoke;
+    z-index:3;
+}
+
+.top-section::before
+{
+    position:absolute;
+    content: '';
+    display:block;
+    background: rgb(241, 82, 54);
+    top: 0px;
+    left: 0;
+    width: 350px;
+    height: 420px;
+    z-index: -1;
+    clip-path: polygon(0 0, 57% 0, 35% 41%, 0 100%);
+}
+
+.top-section h3 span
+{
+   font-size: 2.5rem;
+}
+
+.top-section small
+{
+    max-width: 250px;
+    display: block;
+}
+.about-section .left-side 
+{
+  position: relative;
+  z-index: 10;
+}
+.about-section .left-side .img-wrapper
+{
+   border:1px solid rgba(255, 255, 255, 0.4);
+   border-radius: 10px;
+   padding: 10px;
+   position: relative;
+}
+
+.about-section .left-side .img-wrapper::before
+{
+  content: "";
+  position: absolute;
+  width:100%;
+  height:100%;
+  background: transparent;
+  top:0;
+  left: 0;
+  border-radius: 10px;
+  border:3px solid transparent;
+  transition: all 0.5s ease-in-out;
+}
+
+.about-section  .left-side .img-wrapper:hover:before
+{
+  background:rgba(0, 0, 0, 0.479);
+  border:4px solid tomato;
+}
+.about-section .left-side .img-wrapper img
+{
+   border-radius: 7px;
+}
+
+.about-section  .left-side .img-wrapper .img-text
+{
+   position: absolute;
+   font-weight: 900;
+   z-index: 3;
+   top:40%;
+   left:15%;
+}
+
+.about-section .left-side .img-wrapper .img-text h4
+{
+    color:whitesmoke;
+}
+.about-section  .left-side .img-wrapper .img-text h4 span
+{
+    font-size: 1.8rem;
+}
+
+.middle-line
+{
+  width:5px;
+  height:75%;
+  border-radius: 20px;
+  background:rgb(250, 116, 92);
+}
+.about-section .right-side h2,h4
+{
+    color:white;
+}
+.about-section .right-side p
+{
+    color:whitesmoke;
+    font-weight: normal;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+.bottom-section
+{
+    position:absolute;
+    display:block;
+    background:black;
+    padding: 0.5rem 1rem;
+    bottom:-115px;
+    right: 0;
+    width: 60%;
+    min-width: 350px;
+    border-radius: 0 0 0 80px;
+    color: whitesmoke;
+    z-index:3;
+}
+
+.bottom-section h4 span
+{
+    font-size: 1.8rem;
+}
+
+.bottom-section .owl-carousel img
+{
+  width: 30px !important;
+  margin: auto;
+  padding-top: 0.3rem;
+  height: 30px;
+  object-fit: contain;
+}
+
+
+
+
+
+
+
+
+/* services----------- */
+.services-section
+{
+  margin-top: 18rem;
+  margin-bottom: 6rem;
+}
+.services-section .content
+{
+  border-radius: 10px;
+}
+
+ .services-section .content .head h1
+ {
+    position: relative;
+    font-weight: 700;
+ }
+ 
+ .services-section .content .head p
+ {
+   margin-top: 1.2rem;
+ }
+
+ .services-section .content .head h1::after
+ {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 40px;
+    height: 5px;
+    background:linear-gradient(to right,rgb(27, 26, 26),chocolate);
+    border-radius: 50px;
+    bottom: -5px;
+    left: 0;
+ }
+
+ .services-section .content .body .img-wrapper
+ {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.226);
+    position: relative;
+    border-radius: 15px;
+ }
+ .services-section .content .body .img-wrapper::before
+ {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(rgba(0, 0, 0, 0.288),rgba(0, 0, 0, 0.856));
+    left: 0;
+    top: 0;
+    border-radius: 15px;
+
+ }
+
+ .services-section .content .body .img-wrapper img
+ {
+    border-radius: 10px;
+ }
+ .services-section .content .body .text-wrapper
+ {
+    background:linear-gradient(rgba(210, 105, 30, 0.575),rgb(27, 26, 26));
+    color: whitesmoke;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 160px;
+    height: 160px;
+    border-radius: 0 100px 100px 100px;
+    text-transform: up;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    padding: 1rem;
+
+ }
+
+ .services-section .item .head
+ {
+    background:rgb(27, 26, 26);
+    color: whitesmoke;
+    border-radius: 50px;
+    padding: 1rem;
+    letter-spacing: 2px;
+ }
+
+ .services-section .item .head i
+ {
+    font-size: 0.8rem;
+ }
+ .services-section .item .head i.silver
+ {
+    color: rgb(60, 169, 212);
+ }
+ .services-section .item .head i.gold
+ {
+    color: gold;
+ }
+
+ .services-section .item .body .top
+ {
+    background-color: chocolate;
+    clip-path: polygon(0 1%, 100% 0, 100% 62%, 49% 100%, 0 62%);
+    border-radius:10px 10px 0 0 ;
+
+ }
+ .services-section .item .body .top h5
+ {
+    font-size: 1rem;
+ }
+ .services-section .item .body .top h5 span
+ {
+    font-size: 1.7rem;
+ }
+ 
+ .services-section .item .body .bottom
+ {
+    border-radius:  0 0 15px 15px;
+ }
+ .item-list
+ {
+    border-bottom: 1px solid #33333321;
+ }
+
+ .item-list h6
+ {
+    font-weight: 600;
+    color: #333;
+ }
+
+/* -------------------------------------------------------------- */
+
+
+
+/* PROJECT SECTION---- */
+
+.project-section
+{
+  position: relative !important;
+  margin-top: 8rem;
+}
+
+.project-section .col-md-4
+{
+    position: sticky !important;
+    top: 0px;
+    z-index: 5;
+}
+
+.project-section .content
+{
+    background:linear-gradient(black, rgb(27, 26, 26));
+    border-radius: 6px;
+
+}
+
+.project-section .col-md-4 .content .img
+{
+    padding: 0.3rem;
+    position: relative;
+}
+
+.project-section .col-md-4 .content #display-text
+{
+   transition: all 0.3s ease-in;
+}
+
+
+.project-section .col-md-4 .content #display-text.remove-active
+{
+   height: 0px;
+   overflow: hidden;
+   padding: 0 !important;
+}
+
+.project-section .col-md-4 .content .img .drop-btn
+{
+    position:absolute;
+    background: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%,-50%);
+    border-radius: 100px;
+    right: -17px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.329);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.project-section .col-md-4 .content .img .drop-btn:hover
+{
+   background: chocolate;
+   color: white;
+   border: 2px solid white;
+}
+
+.project-section .col-md-8 .img
+{
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.project-section .col-md-8 .img:hover
+{
+    transform: rotate(-3deg);
+}
+
+
+.project-section .col-md-8 .img:hover .text-overlay
+{
+    clip-path: polygon(0 74%, 100% 73%, 100% 100%, 0% 100%);
+    background: aqua;
+}
+
+
+.project-section .col-md-8 .img::before
+{
+    position: absolute;
+    display: block;
+    width:100%;
+    height:100%;
+    border-radius: 5px;
+    content:"";
+    top:0;
+    left:0;
+    background: linear-gradient(rgba(0, 0, 0, 0.61),rgba(0, 0, 0, 0.548));
+    transition: all 0.5s ease-in-out;
+}
+
+.project-section img
+{
+    width:100%;
+    border-radius: 6px;
+}
+
+
+.project-section .col-md-8 .img img
+{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.329);
+}
+
+.project-section .col-md-8 .img .text-overlay
+{
+    position: absolute;
+    bottom:-2px;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 80%, 100% 65%, 100% 100%, 0% 100%);
+    z-index: 2;
+    background: whitesmoke;
+    border-radius: 5px;
+    color: #333;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+.project-section .col-md-8 .img .text-overlay h6
+{
+    position: absolute;
+    bottom:-3px;
+    width: 100%;
+}
+
+.project-section .col-md-8 .img .hidden-texts
+{
+    display:none;
+}
+/* ------------------- */
+
+
+
+
+
+
+.get-started-section
+{
+    background:linear-gradient(black, rgb(27, 26, 26));
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.get-started-section .left-side
+{
+    text-align: right;
+    color:white;
+}
+.get-started-section .left-side small
+{
+    max-width: 300px;
+    display: inline-block;
+    margin-left: auto;
+}
+.get-started-section .left-side h1 span
+{
+    color: chocolate;
+}
+
+.get-started-section .img-wrapper
+{
+    width: 80%;
+}
+.get-started-section .img-wrapper img
+{
+    width: 100%;
+}
+
+
+
+
+
+/* Team---------------------- */
+.team-section
+{
+   background:rgb(255, 252, 252);
+}
+
+.team-section .wrapper
+{
+    padding: 70px 0 50px 0;
+}
+
+.team-section .item
+{
+  padding: 15px 10px;
+  text-align: center;
+  margin: 20px 0;
+  background:rgb(27, 26, 26);
+  color:white;
+  border-radius: 10px;
+}
+
+.team-section .heading
+{
+  text-align: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+.team-section .heading h1
+{
+  font-weight: 900;
+  color:black;
+}
+.team-section .heading p
+{
+  max-width: 250px;
+  margin:auto;
+}
+.team-section .heading::after
+{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 20%;
+  height: 5px;
+  border-radius: 50px;
+  bottom: -12px;
+  margin:auto;
+  background:linear-gradient(to right,rgb(27, 26, 26),chocolate);
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.team-section .item:hover img
+{
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 0px;
+}
+.team-section .item .img-wrapper
+{
+    width:100px;
+    margin: auo;
+}
+
+.team-section .item img
+{
+    border-radius: 200px;
+    border-top-right-radius: 0px;
+    border: 4px solid chocolate;
+    width: 85%;
+    transition:all 0.5s ease-in-out;
+}
+
+.team-section .item h4
+{
+    font-weight: 900;
+    margin-top:10px;
+    position: relative;
+}
+
+.team-section .item small
+{
+    display: block;
+    max-width: 250px;
+    margin: auto;
+    padding: 3px;
+    font-weight: 500;
+}
+
+.team-section .item .team-icons 
+{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.team-section .item .team-icons li
+{
+  margin-right:0.9rem;
+  font-size: 1.2rem;
+  color:rgb(240, 136, 62);
+  transition:all 0.5s ease-in-out;
+}
+
+.team-section .item .team-icons li:hover
+{
+
+  color:white;
+  transform: scale(1.1) rotate(360deg);
+}
+
+/* testimonia-------------- */
+.testimonia
+{
+  margin: 5rem 0;
+}
+
+.testimonia .content-wrapper
+{
+  background: rgb(27, 26, 26);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.123);
+  border-radius: 15px;
+  position: relative;
+}
+.testimonia .content-wrapper::after
+{
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  width: 450px;
+  height: 400px;
+  position: absolute;
+  background-color:rgb(27, 26, 26);
+  clip-path: circle(50% at 9% 4%);
+  border-radius: 15px 0 0 0 ;
+}
+
+.testimonia .content
+{
+  background:whitesmoke;
+  padding: 3rem;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonia .content .tes-bg
+{
+  position: absolute;
+  width: 260px;
+  z-index: 1;
+  right: 50px;
+  bottom: -50px;
+  transform: rotate(-25deg);
+  opacity: 0.8;
+}
+
+.testimonia .content .owl-carousel img
+{
+  width: 220px;
+  height: 220px;
+  border-radius: 100% 100% 100% 100%;
+  border: 8px solid chocolate;
+  object-fit: cover;
+  object-position: center;
+}
+
+.testimonia h1
+{
+  position: relative;
+  font-weight: 700;
+}
+
+.testimonia h1::after
+{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 5px;
+  border-radius: 50px;
+  bottom: -6px;
+  margin:auto;
+  background:linear-gradient(to right,rgb(27, 26, 26),chocolate);
+  left:0;
+}
+
+.testimonia .content h4
+{
+  color: #333;
+  font-weight: 600;
+}
+
+.testimonia .content p
+{
+  max-width: 400px;
+}
+.testimonia .content .stars i
+{
+  color: chocolate;
+}
+/* ------------------------ */
+
+
+
+
+/* contact section---------- */
+.contact-section
+{
+    background:linear-gradient(to right, black,rgb(27, 26, 26));
+    border-radius: 20px;
+}
+.contact-section .top
+{
+    padding: 3rem;
+}
+.contact-section .top small
+{
+    color: aqua;
+    letter-spacing: 1px;
+    position: relative;
+}
+.contact-section .top small::before
+{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  border-radius: 50px;
+  top: -12px;
+  margin:auto;
+  background:linear-gradient(to right,rgb(27, 26, 26),chocolate);
+  left:0;
+}
+.contact-section .top h2
+{
+    font-weight: 800;
+    max-width: 400px;
+}
+.contact-section .top .c-btn
+{
+    padding: 1rem 2rem;
+    border: 4px solid chocolate;
+    color: whitesmoke;
+    display: inline-block;
+    font-size: 1.6rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.contact-section .top .c-btn:hover
+{
+    background-color: chocolate;
+    border:2px solid whitesmoke;
+}
+
+.contact-section .body
+{
+    border-radius:20px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.555),rgb(0, 0, 0)),url(../images/contact.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 160%);
+    padding-top: 2rem;
+    background-attachment: fixed;
+}
+.contact-section .body .text-wrapper
+{
+   background:linear-gradient(rgba(210, 105, 30, 0.575),rgb(27, 26, 26));
+   color: whitesmoke;
+   position: absolute;
+   top:50%;
+   left:50%;
+   transform: translate(-50%,-50%);
+   width: 220px;
+   height: 220px;
+   border-radius: 0 150px 150px 150px;
+   text-transform: up;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-transform: capitalize;
+   padding: 1rem;
+   text-align: center;
+
+}
+
+.contact-section .body form .f-row
+{
+   display: flex;
+   justify-content: space-between;
+}
+
+.contact-section .body form .f-row .item
+{
+    flex-basis: 45%;
+}
+
+.contact-section .body form .f-row .item i
+{
+    color: aqua;
+}
+
+.contact-section .body form .f-row .item input
+{
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.39);
+    color: rgba(245, 245, 245, 0.952);
+}
+
+.contact-section .body form  textarea
+{
+   border: 1px solid rgba(0, 255, 255, 0.39);
+   width: 100%;
+   background: transparent;
+   color: rgba(245, 245, 245, 0.952);
+   border-radius: 5px;
+   padding: 0.5rem;
+}
+
+.contact-section .body form  .submit-btn
+{
+   background: whitesmoke;
+   color: #333;
+   font-weight: 700;
+   border: 2x solid rgba(0, 255, 255, 0.39);
+   padding: 0.7rem 2rem;
+   transition: all 0.5s ease-in-out;
+}
+
+.contact-section .body form  .submit-btn:hover
+{
+   background: transparent;
+   color: whitesmoke;
+}
+
+.contact-section  .footer
+{
+   background:linear-gradient(to right, black,rgb(27, 26, 26));
+   color: whitesmoke;
+   padding-top: 3rem;
+   border-radius: 0 0 20px 20px;
+}
+
+.contact-section .footer h1
+{
+   color:chocolate;
+}
+
+.contact-section .footer h1 span
+{
+   color: whitesmoke;
+   font-size: 1.5rem;
+}
+
+.contact-section .footer ul
+{
+   list-style-type:none;
+}
+
+.contact-section .footer ul li
+{
+   font-size: 0.9rem;
+   margin-bottom: 0.6rem;
+   transition: all 0.5s;
+   color: rgba(245, 245, 245, 0.589);
+}
+
+.contact-section .footer ul li.head
+{
+   letter-spacing: 1px;
+}
+
+.contact-section .footer ul li a
+{
+   color: rgba(245, 245, 245, 0.589);
+}
+
+.contact-section  .footer ul li.item:hover
+{
+   margin-left: 0.5rem;
+}
+
+.contact-section .footer ul li i
+{
+   color:chocolate;
+}
+
+.contact-section .footer ul li p
+{
+   font-size: 0.8rem;
+   max-width: 200px;
+}
+
+/* ------------------------- */
+
+
+
+
+
+
+
+
+
+
+@media(max-width:980px)
+{
+    .bottom-section
+    {
+        bottom:-150px;
+        width: 100%;
+        border-bottom-left-radius: 50px;
+    }
+}
+
+
+
+
+@media(max-width:800px)
+{
+    .header-design
+    {
+     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+    }
+    .hero-content
+    {
+        text-align: center;
+    }
+    .w-75
+    {
+        margin: auto;
+    }
+    .about-section .left-side .connected
+    {
+        display: none;
+    }
+    .services-section
+    {
+        margin-top: 7rem;
+    }
+}
+
+@media(max-width:680px)
+{
+    .about-section
+    {
+
+        border-bottom-left-radius:0px;
+
+    }
+
+    .contact-section .footer
+    {
+        background-position: bottom;
+        clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 160%);
+    }
+    .testimonia .content .tes-bg
+    {
+    position: absolute;
+    width: 220px;
+    z-index: 1;
+    right: -70px;
+    bottom: -60px;
+    transform: rotate(-25deg);
+    opacity: 0.8;
+    }
+    .services-section
+    {
+     margin-top: 20rem;
+     margin-bottom: 6rem;
+    }
+    .testimonia .content .owl-carousel img
+    {
+      width: 180px;
+      height: 180px;
+    }
+    .testimonia .content-wrapper::after
+    {
+        clip-path: circle(42.2% at 0 0);
+    }
+}
+
+@media(max-width:480px)
+{
+   html
+   {
+       font-size:75%
+   }
+}
