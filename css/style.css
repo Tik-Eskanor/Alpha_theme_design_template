@@ -895,6 +895,7 @@ html::-webkit-scrollbar-thumb
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.123);
   border-radius: 15px;
   position: relative;
+  overflow: hidden;
 }
 .testimonia .content-wrapper::after
 {
